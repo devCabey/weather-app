@@ -62,13 +62,13 @@ body{
 }
 .country_time{
 font-size:16px;
-color:#555;
-margin-top:2px;
+margin-top:5px;
 }
-/* .country_date{
-font-size:16px;
-color:#555;
-} */
+.country_date{
+font-size:18px;
+margin-top:5px;
+
+}
 
 .temperature_wrapper{
   display:flex;
@@ -92,11 +92,12 @@ color:#555;
 
 .temperature_text{
   font-size:100px;
-  color:
+
 }
 .temperature_measure{
   font-size:20px;
   cursor:pointer;
+  color:#aaa;
 }
 
 .measure_seperator{
@@ -108,4 +109,8 @@ color:#555;
   vertical-align:super;
   font-size:12px;
   margin:1px;
+}
+
+.activated{
+  color:black
 }
