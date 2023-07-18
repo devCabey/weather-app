@@ -1,0 +1,111 @@
+body{
+  margin:0px;
+  padding:0px;
+  padding-top:50px;
+  border:0px;
+  font-size:12px;
+  background-image:url('https://images.theconversation.com/files/393210/original/file-20210401-13-z6rl6z.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop');
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+.weather_container{
+  /* border:1px solid red; */
+  width:600px;
+  height:200px;
+  border-radius:5px;
+  padding:5px;
+  margin:auto;
+  background-color:white;
+  shadow:2px gray;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-direction:row-reverse;
+}
+
+.country_container{
+  width:200px;
+  display:flex;
+  justify-content:end;
+}
+.country_wrapper{
+  /* border:1px solid blue; */
+  width:150px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:start;
+  height:100%
+}
+
+.country_city{
+  font-size:30px;
+  font-weight:bold;
+  color:#4f5f5f;
+}
+
+.country_name{
+  font-size:15px;
+  color:#aaa;
+}
+
+.country_weather_wrapper{
+  margin-top:10px;
+  
+}
+
+.country_weather_condition{
+  font-size:15px;
+  color:#555;
+  font-weight:bold;
+}
+.country_time{
+font-size:16px;
+color:#555;
+margin-top:2px;
+}
+/* .country_date{
+font-size:16px;
+color:#555;
+} */
+
+.temperature_wrapper{
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
+  flex:1;
+  gap:20px;
+  padding-left:20px;
+}
+
+.temperature_image{
+
+}
+
+.temperature_text_wrapper{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:10px;
+}
+
+.temperature_text{
+  font-size:100px;
+  color:
+}
+.temperature_measure{
+  font-size:20px;
+  cursor:pointer;
+}
+
+.measure_seperator{
+  font-size:20px;
+  margin:2px;
+}
+
+.degree{
+  vertical-align:super;
+  font-size:12px;
+  margin:1px;
+}
