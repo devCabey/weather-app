@@ -9,8 +9,8 @@ const fetchDataByCoordinate = function ({ longitude, latitude }) {
 		`https://weatherapi-com.p.rapidapi.com/current.json?q=${latitude},${longitude}`,
 		{
 			headers: {
-				'X-RapidAPI-Key': 'f7ce8a6e8cmsh987eaefb4062f39p1c7499jsn78a8205605a6',
-				'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com',
+				'X-RapidAPI-Key': key,
+				'X-RapidAPI-Host': host,
 			},
 		}
 	)
@@ -24,8 +24,8 @@ const fetchDataByCity = async function (city) {
 	return async function (url) {
 		const response = await fetch(`${url}?q=${city}`, {
 			headers: {
-				'X-RapidAPI-Key': 'f7ce8a6e8cmsh987eaefb4062f39p1c7499jsn78a8205605a6',
-				'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com',
+				'X-RapidAPI-Key': key,
+				'X-RapidAPI-Host': host,
 			},
 		});
 		return response;
