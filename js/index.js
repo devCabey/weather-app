@@ -4,8 +4,13 @@ const addClass = R.curry(function (classname, element) {
 	return element.classList.add(classname);
 });
 
-const fetchDataByCoordinate = function ({ longitude, latitude }) {
-	const data = fetch(
+const writeText = R.curry(function (text, element) {
+	element.innerHTML = text;
+	return element;
+});
+
+const fetchDataByCoordinate = async function ({ longitude, latitude }) {
+	const response = await fetch(
 		`https://weatherapi-com.p.rapidapi.com/current.json?q=${latitude},${longitude}`,
 		{
 			headers: {
@@ -16,18 +21,20 @@ const fetchDataByCoordinate = function ({ longitude, latitude }) {
 	)
 		.then((res) => res.json())
 		.then((data) => data);
-
-	return data;
+	return response;
 };
 
 const fetchDataByCity = async function (city) {
-	return async function (url) {
-		const response = await fetch(`${url}?q=${city}`, {
+	const response = await fetch(
+		`https://weatherapi-com.p.rapidapi.com/current.json?q=${city}`,
+		{
 			headers: {
 				'X-RapidAPI-Key': key,
 				'X-RapidAPI-Host': host,
 			},
-		});
-		return response;
-	};
+		}
+	)
+		.then((res) => res.json())
+		.then((data) => data);
+	return response;
 };
