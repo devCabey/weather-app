@@ -90,10 +90,7 @@ margin-top:5px;
   gap:10px;
 }
 
-.temperature_text{
-  font-size:100px;
 
-}
 .temperature_measure{
   font-size:20px;
   cursor:pointer;
@@ -113,4 +110,10 @@ margin-top:5px;
 
 .activated{
   color:black
+}
+
+
+.temperature_text{
+  font-size:70px;
+
 }
