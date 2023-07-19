@@ -9,32 +9,41 @@
 	<body>
 		<div class="weather_container">
 			<div class="country_wrapper">
-				<div class="country_city">Haasto</div>
-				<div class="country_name">Ghana</div>
+				<div class="country_city" id="city">Haasto</div>
+				<div class="country_name" id="country">Ghana</div>
 				<div class="country_weather_wrapper">
-					<div class="country_time">Tuesday 2:00pm</div>
-					<div class="country_date">12-04-2023</div>
+					<div class="country_time" id="time">Tuesday 2:00pm</div>
+					<div class="country_date" id="dater">12-04-2023</div>
 				</div>
 			</div>
 
 			<div class="temperature_wrapper">
 				<div class="temperature_image">
-					<img src="./asset/sun.png" alt="weather illustration" height="100" />
-					<div class="country_weather_condition">Mostly Sunny</div>
+					<img
+						src="./asset/sun.png"
+						alt="weather illustration"
+						height="100"
+						id="image_indicator" />
+					<div class="country_weather_condition" id="condition">
+						Mostly Sunny
+					</div>
 				</div>
 				<div class="temperature_text_wrapper">
-					<span class="temperature_text"> 29 </span>
+					<span class="temperature_text" id="temperature"> 29 </span>
 					<span class="temperature_measure_wrapper">
-						<span class="temperature_measure">
+						<span class="temperature_measure" id="celcius">
 							<span class="degree">o</span>C
 						</span>
 						<span class="measure_seperator">|</span>
-						<span class="temperature_measure">
+						<span class="temperature_measure" id="fel">
 							<span class="degree">o</span>F
 						</span>
 					</span>
 				</div>
 			</div>
 		</div>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/ramda/0.25.0/ramda.min.js"></script>
+		<script src="./js/index.js"></script>
+		<script src="./js/api.js"></script>
 	</body>
 </html>

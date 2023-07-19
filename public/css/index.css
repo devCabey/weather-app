@@ -4,7 +4,6 @@ body{
   padding-top:50px;
   border:0px;
   font-size:12px;
-  background-image:url('https://images.theconversation.com/files/393210/original/file-20210401-13-z6rl6z.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop');
   background-repeat:no-repeat;
   background-size:cover;
 }
@@ -59,6 +58,7 @@ body{
   font-size:15px;
   color:#555;
   font-weight:bold;
+  text-align:center
 }
 .country_time{
 font-size:16px;
